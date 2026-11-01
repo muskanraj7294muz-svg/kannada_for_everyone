@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %}Kannada Quiz{% endblock %}
+
+{% block content %}
+
+<section class="page-heading">
+    <h1>Kannada Practice Quiz</h1>
+    <p>Test your Kannada vocabulary with these 5 questions.</p>
+</section>
+
+<section class="quiz-container">
+    <form id="quiz-form" onsubmit="event.preventDefault(); checkQuiz();">
+
+        <div class="question-card">
+            <h3>1. What is the meaning of "Namaskara"?</h3>
+            <label><input type="radio" name="q1" value="hello"> Hello</label>
+            <label><input type="radio" name="q1" value="water"> Water</label>
+            <label><input type="radio" name="q1" value="no"> No</label>
+        </div>
+
+        <div class="question-card">
+            <h3>2. What is the meaning of "Dhanyavadagalu"?</h3>
+            <label><input type="radio" name="q2" value="yes"> Yes</label>
+            <label><input type="radio" name="q2" value="thankyou"> Thank You</label>
+            <label><input type="radio" name="q2" value="hello"> Hello</label>
+        </div>
+
+        <div class="question-card">
+            <h3>3. What is the meaning of "Howdu"?</h3>
+            <label><input type="radio" name="q3" value="no"> No</label>
+            <label><input type="radio" name="q3" value="water"> Water</label>
+            <label><input type="radio" name="q3" value="yes"> Yes</label>
+        </div>
+
+        <div class="question-card">
+            <h3>4. What is the meaning of "Neeru"?</h3>
+            <label><input type="radio" name="q4" value="water"> Water</label>
+            <label><input type="radio" name="q4" value="hello"> Hello</label>
+            <label><input type="radio" name="q4" value="thankyou"> Thank You</label>
+        </div>
+
+        <div class="question-card">
+            <h3>5. What is the meaning of "Illa"?</h3>
+            <label><input type="radio" name="q5" value="yes"> Yes</label>
+            <label><input type="radio" name="q5" value="no"> No</label>
+            <label><input type="radio" name="q5" value="water"> Water</label>
+        </div>
+
+        <div class="quiz-actions">
+            <button type="submit" class="btn">Submit Quiz</button>
+            <button type="button" class="secondary-btn" onclick="resetQuiz()">Try Again</button>
+        </div>
+
+    </form>
+
+    <div id="quiz-result" class="quiz-result"></div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}My Learning Progress{% endblock %}
+
+{% block content %}
+
+<section class="page-heading">
+    <h1>My Learning Progress</h1>
+    <p>Track your Kannada learning journey.</p>
+</section>
+
+<section class="progress-container">
+
+    <div class="progress-card">
+        <h2>🧠 Quiz Performance</h2>
+        <p>Your Latest Quiz Score</p>
+        <h3 id="quiz-score">Not Attempted</h3>
+        <p id="quiz-message">Complete a quiz to see your score.</p>
+    </div>
+
+    <div class="progress-card">
+        <h2>📚 Learning Activity</h2>
+        <p>Available Kannada Lessons</p>
+        <h3>6 Words</h3>
+        <p>Practice daily to improve your vocabulary.</p>
+    </div>
+
+    <div class="progress-card">
+        <h2>🎯 Your Goal</h2>
+        <p>Complete the Kannada vocabulary quiz.</p>
+        <h3>Keep Learning!</h3>
+        <a href="/quiz" class="btn">Practice Quiz</a>
+    </div>
+
+</section>
+
+{% endblock %}

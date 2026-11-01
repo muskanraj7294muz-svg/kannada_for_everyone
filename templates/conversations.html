@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block title %}Daily Conversations{% endblock %}
+
+{% block content %}
+
+<section class="page-heading">
+    <h1>Daily Kannada Conversations</h1>
+    <p>Learn how to speak Kannada in everyday situations.</p>
+</section>
+
+<section class="conversation-container">
+
+    <div class="conversation-card">
+        <h2>🏫 At College</h2>
+
+        <div class="dialogue">
+            <p><b>Person 1:</b> ನಿಮ್ಮ ಹೆಸರು ಏನು?</p>
+            <p><b>Meaning:</b> What is your name?</p>
+            <p><b>Person 2:</b> ನನ್ನ ಹೆಸರು ಮುಸ್ಕಾನ್.</p>
+            <p><b>Meaning:</b> My name is Muskan.</p>
+        </div>
+
+        <button onclick="speakKannada('ನಿಮ್ಮ ಹೆಸರು ಏನು?')">🔊 Listen</button>
+    </div>
+
+    <div class="conversation-card">
+        <h2>🛍️ At Shopping</h2>
+
+        <div class="dialogue">
+            <p><b>Person 1:</b> ಇದು ಎಷ್ಟು?</p>
+            <p><b>Meaning:</b> How much is this?</p>
+            <p><b>Person 2:</b> ನೂರು ರೂಪಾಯಿ.</p>
+            <p><b>Meaning:</b> One hundred rupees.</p>
+        </div>
+
+        <button onclick="speakKannada('ಇದು ಎಷ್ಟು?')">🔊 Listen</button>
+    </div>
+
+    <div class="conversation-card">
+        <h2>🚕 At Travel</h2>
+
+        <div class="dialogue">
+            <p><b>Person 1:</b> ಬಸ್ ನಿಲ್ದಾಣ ಎಲ್ಲಿದೆ?</p>
+            <p><b>Meaning:</b> Where is the bus stop?</p>
+            <p><b>Person 2:</b> ಅಲ್ಲಿ ಇದೆ.</p>
+            <p><b>Meaning:</b> It is there.</p>
+        </div>
+
+        <button onclick="speakKannada('ಬಸ್ ನಿಲ್ದಾಣ ಎಲ್ಲಿದೆ?')">🔊 Listen</button>
+    </div>
+
+    <div class="conversation-card">
+        <h2>🏥 At Hospital</h2>
+
+        <div class="dialogue">
+            <p><b>Person 1:</b> ನನಗೆ ಸಹಾಯ ಬೇಕು.</p>
+            <p><b>Meaning:</b> I need help.</p>
+            <p><b>Person 2:</b> ಸರಿ, ಸಹಾಯ ಮಾಡುತ್ತೇನೆ.</p>
+            <p><b>Meaning:</b> Okay, I will help.</p>
+        </div>
+
+        <button onclick="speakKannada('ನನಗೆ ಸಹಾಯ ಬೇಕು')">🔊 Listen</button>
+    </div>
+
+</section>
+
+{% endblock %}

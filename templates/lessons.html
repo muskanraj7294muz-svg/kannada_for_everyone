@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block title %}Kannada Lessons{% endblock %}
+
+{% block content %}
+
+<section class="page-heading">
+    <h1>Learn Kannada</h1>
+    <p>Start with these simple everyday Kannada words.</p>
+</section>
+
+<section class="lesson-grid">
+
+    <div class="lesson-card">
+        <h2>ನಮಸ್ಕಾರ</h2>
+        <h3>Namaskara</h3>
+        <p>Hello / नमस्ते</p>
+        <button onclick="speakKannada('ನಮಸ್ಕಾರ')">🔊 Listen</button>
+    </div>
+
+    <div class="lesson-card">
+        <h2>ಧನ್ಯವಾದಗಳು</h2>
+        <h3>Dhanyavadagalu</h3>
+        <p>Thank You / धन्यवाद</p>
+        <button onclick="speakKannada('ಧನ್ಯವಾದಗಳು')">🔊 Listen</button>
+    </div>
+
+    <div class="lesson-card">
+        <h2>ಹೌದು</h2>
+        <h3>Howdu</h3>
+        <p>Yes / हाँ</p>
+        <button onclick="speakKannada('ಹೌದು')">🔊 Listen</button>
+    </div>
+
+    <div class="lesson-card">
+        <h2>ಇಲ್ಲ</h2>
+        <h3>Illa</h3>
+        <p>No / नहीं</p>
+        <button onclick="speakKannada('ಇಲ್ಲ')">🔊 Listen</button>
+    </div>
+
+    <div class="lesson-card">
+        <h2>ನೀರು</h2>
+        <h3>Neeru</h3>
+        <p>Water / पानी</p>
+        <button onclick="speakKannada('ನೀರು')">🔊 Listen</button>
+    </div>
+
+    <div class="lesson-card">
+        <h2>ಬನ್ನಿ</h2>
+        <h3>Banni</h3>
+        <p>Come / आइए</p>
+        <button onclick="speakKannada('ಬನ್ನಿ')">🔊 Listen</button>
+    </div>
+
+</section>
+
+{% endblock %}

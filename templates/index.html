@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}Home | Kannada for Everyone{% endblock %}
+
+{% block content %}
+
+<section class="hero">
+    <div class="hero-content">
+        <p class="tagline">WELCOME TO KANNADA FOR EVERYONE</p>
+
+        <h1>Learn Kannada.<br>
+            Speak with Confidence.</h1>
+
+        <p>
+            Start learning Kannada from zero.
+            Learn daily words, useful conversations
+            and practice with fun quizzes.
+        </p>
+
+        <a href="/lessons" class="btn">Start Learning</a>
+    </div>
+
+    <div class="hero-card">
+        <h2>ನಮಸ್ಕಾರ</h2>
+        <h3>Namaskara</h3>
+        <p>Hello / नमस्ते</p>
+        <span>Let's Learn Kannada!</span>
+    </div>
+</section>
+
+<section class="features">
+    <h2>What Will You Learn?</h2>
+
+    <div class="feature-grid">
+        <div class="feature-card">
+            <h3>📚 Kannada Lessons</h3>
+            <p>Learn basic Kannada words and meanings.</p>
+            <a href="/lessons">Explore Lessons →</a>
+        </div>
+
+        <div class="feature-card">
+            <h3>💬 Daily Conversations</h3>
+            <p>Practice useful everyday conversations.</p>
+            <a href="/conversations">Practice Now →</a>
+        </div>
+
+        <div class="feature-card">
+            <h3>🧠 Smart Quiz</h3>
+            <p>Test your Kannada learning with quizzes.</p>
+            <a href="/quiz">Take Quiz →</a>
+        </div>
+
+        <div class="feature-card">
+            <h3>📈 Learning Progress</h3>
+            <p>Keep track of your learning journey.</p>
+            <a href="/progress">View Progress →</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
